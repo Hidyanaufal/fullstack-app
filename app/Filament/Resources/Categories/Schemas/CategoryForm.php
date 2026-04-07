@@ -2,6 +2,8 @@
 
 namespace App\Filament\Resources\Categories\Schemas;
 
+use Dom\Text;
+use Filament\Forms\Components\Textarea;
 use Filament\Forms\Components\TextInput;
 use Filament\Schemas\Schema;
 
@@ -17,6 +19,8 @@ class CategoryForm
                 TextInput::make('slug')
                     ->required()
                     ->label('Slug'),
+                Textarea::make('sinopsis')
+                    ->label('Sinopsis'),
             ]);
     }
 }

@@ -19,6 +19,8 @@ class CategoriesTable
                     ->label('Name'),
                 TextColumn::make('slug')
                     ->label('Slug'),
+                TextColumn::make('sinopsis')
+                    ->label('Sinopsis'),
             ])
             ->filters([
                 //
